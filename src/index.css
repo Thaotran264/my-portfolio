@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
 :root {
   --color-bg: #1f1f38;
@@ -8,11 +8,11 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
-  --transition: all .1s ease;
+  --transition: all 0.1s ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-ms: 90%;
+  --container-width-sm: 90%;
 }
 
 *,
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -40,7 +40,7 @@ body {
 
 .container {
   width: var(--container-width-lg);
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -63,23 +63,26 @@ section > h2 {
 }
 
 .text-light {
-  color: var(--color-light)
+  color: var(--color-light);
 }
-
+ul {
+  list-style-type: none;
+}
 a {
   color: var(--color-primary);
-  transition: var(--transition)
+  transition: var(--transition);
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
-  padding: .75rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
@@ -122,7 +125,16 @@ img {
     width: var(--container-width-sm);
   }
 
-  section > h2{
+  section > h2 {
     margin-top: 2rem;
   }
+}
+/* *********************** Media queries (medium devices) ***********************  */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* *********************** Media queries (small devices) ***********************  */
+
+@media screen and (max-width: 600px) {
 }
